@@ -57,6 +57,15 @@ Pre-problem bug fix:
 
 - Problem 3: These panels should be **"sticky"** and follow the user down the page on desktop devices. ✅
 
-a. Looked at the related panels 
+a. Looked at the related panels to see how they were currently behaving. 
+b. Could see bootstrap was used along most of the file. 
+c. Tested what these panels did at mobile size and desktop breakpoints. 
+d. Began to test making different changes in developer tools to preview
+   changes. 
+e. Added style section to the html file to implement changes to these panels. 
+f. Used position fixed and a few other stylings to make it behave how we want. 
+g. Added @media breakpoint to change it's behaviour when it changing to mobile
+in like with the requirements, so that it scrolls down with desktop, but not 
+with the mobile version. 
 
 
