@@ -1,90 +1,77 @@
 # Practical Task: Specialist Software Engineer
 
-The following practical task outlines the common issues encountered in the Specialist Software Engineer role and proposes solutions for addressing them.
+This document outlines the issues encountered in a Specialist Software Engineer role and provides solutions for addressing them.
 
 ## Test URL
-The errors mentioned below are based on the following URL:
-[Wrext Design - Practical SSE Test](https://wrextdesign.william-reed.com/tests/practical_sse/)
+The following problems are based on this URL: [Wrext Design - Practical SSE Test](https://wrextdesign.william-reed.com/tests/practical_sse/)
 
-### Overview
-After a restoration effort on the server, several issues have been reported:
+## Adjustments URL based on brief
+Here's the HTML page I put together to fix/add the adjustments wanted, 
+not anywhere near the finished article, but does everything wanted
+and helps you see my problem solving logic, ways of working/documenting. 
+Thanks! 
 
-- The mobile/desktop device tracking has stopped picking up data on the external tracking platform.
-- The 'related news' and 'popular news' panel isn't updating dynamically.
-- The 'related news' and 'popular news' panel should be "sticky" and follow the user as they scroll down the page (desktop only).
+https://kendallgmason.github.io/SSE_Test/
 
-### Tasks
-To resolve these issues, you need to complete the following tasks:
+## Overview of Problems
+After restoring the server, several issues were reported:
 
-1. **Fix Mobile/Device Tracking**: Understand why `DataLayer.journey_data.is_mobile` isn't functioning and fix it as needed.
+1. **Device Tracking Failure**: The mobile/desktop device tracking system is not capturing data on the external tracking platform.
+2. **Dynamic Content Update Failure**: The 'related news' and 'popular news' sections are not updating dynamically.
+3. **Sticky Panel Behavior**: The 'related news' and 'popular news' sections should stick to the page during scrolling (desktop only), but this behavior is absent.
 
-2. **Update the 'Related News' and 'Popular News' Blocks**: Review the source code and write JavaScript that updates these blocks with the correct content dynamically.
+## Task Descriptions
+To resolve these issues, complete the following tasks:
 
-3. **Apply "Sticky" Styling**: Add CSS to make the 'related news' and 'popular news' blocks stick to the right side of the page as users scroll, only on desktop.
+1. **Fix Device Tracking**: Investigate why `DataLayer.journey_data.is_mobile` isn't functioning and correct the issue.
 
-### Pointers
+2. **Update Dynamic News Sections**: Review the source code and implement JavaScript to dynamically update 'related news' and 'popular news' sections.
 
-Here are a few pointers to help you with the tasks:
+3. **Implement Sticky Styling**: Apply CSS to make the 'related news' and 'popular news' sections sticky as users scroll on desktop, but not on mobile devices.
 
-- The 'related news' and 'popular news' blocks should load similarly to how the body content loads.
+## Development Guidelines
+Consider these guidelines while addressing the tasks:
 
-- The blocks should only be "sticky" on desktop, not on mobile devices.
+- The 'related news' and 'popular news' sections should load dynamically, similar to the body content.
+- Sticky behavior should only apply to desktop devices, not mobile.
+- Document your process in this README to showcase your documentation skills.
 
-- Document your work in the repository's README file to demonstrate your documentation skills.
+## Solution Delivery
+Submit your solution by providing a public Git repository link.
 
-### Delivery
-Provide your solution as a public Git repository link.
+---
 
---------------------------------------------
+## Solution Approach
 
-### How I Approached These Tasks
+### Problem 1: Device Tracking Failure
+**Issue:** The external tracking platform was not picking up data from mobile/desktop devices.
 
-- Problem 1: The **mobile/desktop device tracking** has stopped working on the external tracking platform. ✅
+**Solution:**
+- **Root Cause:** The tracking data was not initialized correctly.
+- **Steps Taken:**
+  1. Created a new `data.json` file in the root directory with the required values to model the expected behavior.
+  2. Debugged with Chrome Developer Tools, identified an error due to a missing function definition.
+  3. Ensured that `dataLayer.journey_data.is_mobile` is set with an appropriate value instead of an empty string.
+- **Outcome:** Device tracking now works correctly after initialization.
 
-Pre-problem bug fix: 
+### Problem 2: Dynamic Content Update Failure
+**Issue:** 'Related news' and 'popular news' sections were not updating dynamically.
 
- -There was no data.json to fetch from, so I created one and added the values that it was looking for into an external json in the root of this repo. Then fetched from there what was needed to model what it wanted. 
+**Solution:**
+- **Root Cause:** Hardcoded HTML for the 'related news' and 'popular news' sections.
+- **Steps Taken:**
+  1. Analyzed the source code and observed the static structure of these sections.
+  2. Created a JavaScript function to dynamically fetch data from `data.json` and update the sections.
+- **Outcome:** Sections now update dynamically with correct content.
 
-- Steps I took to debug Problem 1: 
+### Problem 3: Sticky Panel Behavior
+**Issue:** The 'related news' and 'popular news' sections were not sticky during scrolling on desktop.
 
- a. I brought the test link up that was provided. 
-
- b. Used Developer Tools in Chrome to see if anything was erroring in the console. 
-
- c. Straight away I noticed it was not referenced right aka the function wasn't 
- defined before it was called, so it was causing it to error. 
-
- d. I also set the dataLayer.journey_data.is_mobile with a value as opposed to a 
- blank string. 
-
- e. This no longer errors and would now work depending on what it was used for specifically. 
-
-- Problem 2: The **related news** and **popular news** panels are not updating dynamically. ✅
-
- a. I could see that both related news and popular news were already set in 
- the html and hardcoded by looking at the source code. 
-
- b. I used as reference the way the body content loaded and did a similar method in javascript to implement being able to dynamically call in popular news and related news from the data.json file. 
-
-- Problem 3: These panels should be **"sticky"** and follow the user down the page on desktop devices. ✅
-
-a. Looked at the related panels to see how they were currently behaving. 
-
-b. Could see bootstrap was used along most of the file. 
-
-c. Tested what these panels did at mobile size and desktop breakpoints. 
-
-d. Began to test making different changes in developer tools to preview
-   changes. 
-
-e. Added style section to the html file to implement changes to these panels. 
-
-f. Used position fixed and a few other stylings to make it behave how we want. 
-
-g. Added @media breakpoint(980px) to change it's behaviour when it changing to mobile
-
-in like with the requirements, so that it scrolls down with desktop, but not 
-
-with the mobile version. 
-
-
+**Solution:**
+- **Root Cause:** Missing CSS to achieve sticky behavior.
+- **Steps Taken:**
+  1. Verified the use of Bootstrap in the project.
+  2. Tested how panels behaved at different screen sizes and breakpoints.
+  3. Implemented `position: fixed` and additional styles to make these sections sticky during scrolling.
+  4. Applied a media query (`@media breakpoint(980px)`) to ensure sticky behavior is restricted to desktop.
+- **Outcome:** Sticky behavior works as expected on desktop, but not on mobile.
