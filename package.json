@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "scss": "^0.2.4"
+  }
+}

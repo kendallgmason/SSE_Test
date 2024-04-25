@@ -1,0 +1,78 @@
+{
+  "headline": "Headline Of The News Article",
+  "author": "Author Name",
+  "date": "April 11, 2023",
+  "image": "./800x400.png",
+  "related_news": [
+    {
+        "title": "I'm Related News Article 1"
+    },
+    {
+        "title": "I'm Related News Article 2"
+    }
+],
+  "popular_news": [
+    {
+        "title": "I'm Popular News Article 1"
+    },
+    {
+        "title": "I'm Popular News Article 2"
+    }
+  ],
+  "comments": [
+      {
+          "name": "Paul Smith",
+          "date": "2d",
+          "content": "Et tortor at risus viverra adipiscing at in tellus. Interdum velit laoreet id donec. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus."
+      },
+      {
+        "name": "Elliot Smith",
+        "date": "2d",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    },
+    {
+        "name": "July Parons",
+        "date": "1d",
+        "content": "Nulla pharetra diam sit amet nisl suscipit adipiscing. Lorem ipsum dolor sit amet consectetur adipiscing elit."
+    },
+    {
+        "name": "Julie Roberts",
+        "date": "3d",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  ],
+  "body": [
+      {
+        "type": "paragraph",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique risus. Iaculis nunc sed augue lacus viverra. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Imperdiet proin fermentum leo vel. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Aliquet nec ullamcorper sit amet risus nullam eget. Tellus mauris a diam maecenas sed enim ut sem viverra. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Nulla facilisi nullam vehicula ipsum a arcu cursus. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Auctor elit sed vulputate mi sit. Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. Non diam phasellus vestibulum lorem sed. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Lorem donec massa sapien faucibus et molestie ac feugiat. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Sociis natoque penatibus et magnis dis parturient. Quis commodo odio aenean sed. Amet purus gravida quis blandit turpis cursus in hac."
+      },
+      {
+        "type": "subheading",
+        "content": "Subheading"
+    }, 
+    {
+        "type": "paragraph2",
+        "content": "Lacinia at quis risus sed. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Varius quam quisque id diam vel. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Quis vel eros donec ac odio tempor orci. Massa vitae tortor condimentum lacinia quis vel eros. Dignissim suspendisse in est ante in nibh mauris cursus mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit...Someone Famous in Source Title"
+      },
+      {
+        "type": "subheading2",
+        "content": "Another Subheading"
+    }, 
+    {
+        "type": "quote",
+        "content": "Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Malesuada fames ac turpis egestas sed tempus urna et pharetra. Tincidunt vitae semper quis lectus nulla. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat."
+    }, 
+    {
+        "type": "list",
+        "items": [
+           "Item 1", "Item 2", "Item 3"
+        ]
+    }, 
+    {
+        "type": "list-group-item",
+        "items": [
+           "News Item 1", "News Item 2", "News Item 3"
+        ]
+    }
+  ]
+}
