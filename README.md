@@ -5,13 +5,16 @@ This document outlines the issues encountered in a Specialist Software Engineer 
 ## Test URL
 The following problems are based on this URL: [Wrext Design - Practical SSE Test](https://wrextdesign.william-reed.com/tests/practical_sse/)
 
-## Adjustments URL based on brief
+## Solution and Fixed URL based on brief
 Here's the HTML page I put together to fix/add the adjustments wanted, 
 not anywhere near the finished article, but does everything wanted
 and helps you see my problem solving logic, ways of working/documenting. 
 Thanks! 
 
 https://kendallgmason.github.io/SSE_Test/
+
+## Repo with README and CHANGELOG: 
+https://github.com/kendallgmason/SSE_Test/
 
 ## Overview of Problems
 After restoring the server, several issues were reported:
